@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   margin: 0px;
   overflow: scroll;
+  font-family: 'Roboto';
 }
 
 /* Flexbox classes */
@@ -12,6 +14,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .justify-center {
@@ -37,6 +49,34 @@ body {
   cursor: pointer;
 }
 
+/* Custom tooltip */
+[data-title] {
+  position: relative;
+}
+
+[data-title]:after {
+  font-family: inherit;
+  content: attr(data-title);
+  background-color: #595959;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 10px;
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  top: 175%;
+  left: 0;
+  white-space: nowrap;
+  z-index: 99999;
+  visibility: hidden;
+}
+
+[data-title]:hover:after {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+/* Navigation bar */
 nav {
   background-color: rgba(33, 33, 33, 0.98);
   padding: 0px 16px;
@@ -46,8 +86,8 @@ nav .material-icons {
   color: white;
 }
 
-nav #nav-left span:nth-child(1) {
-  margin: 8px;
+nav #nav-left div {
+  margin: 0px 8px;
 }
 
 nav #nav-left a {
@@ -68,11 +108,11 @@ nav #nav-mid form input {
   border-color: #303030;
   border-style: solid;
   border-radius: 2px 0px 0px 2px;
+  font-family: inherit;
   background-color: #121212;
   width: 550px;
   padding: 3px 12px;
   font-size: 16px;
-  font-family: Roboto;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.88);
 }
@@ -106,16 +146,24 @@ nav #nav-mid form button:hover .material-icons {
   opacity: 1;
 }
 
-nav #nav-mid span:nth-child(2) {
-  margin: 8px;
+nav #nav-mid div {
+  margin: 0px 8px;
+  height: 32px;
 }
 
-nav #nav-right span:nth-child(-n+3) {
+nav #nav-mid [data-title]:after {
+  top: 175%;
+}
+
+nav #nav-right div:nth-child(-n+3) {
   margin: 8px 16px 8px 8px;
 }
 
-nav #nav-right span:nth-child(4) {
+nav #nav-right div:nth-child(4) {
   margin: 1px 14px;
+}
+
+nav #nav-right div:nth-child(4) .material-icons {
   font-size: 32px;
 }
 /*# sourceMappingURL=style.css.map */

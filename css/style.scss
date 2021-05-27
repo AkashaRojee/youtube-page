@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0px;
     overflow: scroll;
+    font-family: 'Roboto';
 }
 
 /* Flexbox classes */
@@ -8,6 +11,11 @@ body {
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .justify-center {
@@ -30,6 +38,36 @@ body {
     }
 }
 
+/* Custom tooltip */
+
+[data-title] {
+    position: relative;
+
+    &:after {
+        font-family: inherit;
+        content: attr(data-title);
+        background-color: #595959;
+        border: none;
+        border-radius: 2px;
+        padding: 10px 10px;
+        font-size: 12px;
+        color: white;
+        position: absolute;
+        top: 175%;
+        left: 0;
+        white-space: nowrap;
+        z-index: 99999;
+        visibility: hidden;
+    }
+
+    &:hover:after {
+        opacity: 0.7;
+        visibility: visible;
+    }
+}
+
+/* Navigation bar */
+
 nav {
     background-color: rgba(33, 33, 33, 0.98);
     padding: 0px 16px;
@@ -38,16 +76,12 @@ nav {
         color: white;
     }
 
-    #nav-left {  
-
-        span {
-            &:nth-child(1) {
-                margin: 8px;
-            }
+    #nav-left {
+        div {
+            margin: 0px 8px;
         }
-
-        a {
-            margin: 18px 16px;
+        a { 
+            margin: 18px 16px; 
             img {
                 width: 90px;
             }
@@ -65,11 +99,11 @@ nav {
                 border-color: hsl(0, 0%, 18.82%);
                 border-style: solid;
                 border-radius: 2px 0px 0px 2px;
+                font-family: inherit;
                 background-color: hsl(0, 0%, 7%);
                 width: 550px;
                 padding: 3px 12px;
                 font-size: 16px;
-                font-family: Roboto;
                 line-height: 24px;
                 color: hsla(0, 100%, 100%, 0.88);
                 &:focus {
@@ -102,22 +136,28 @@ nav {
             }
         }
 
-        span {
-            &:nth-child(2) {
-                margin: 8px;
+        div {
+            margin: 0px 8px;
+            height: 32px;
+        }
+
+        [data-title] {
+            &:after {
+                top: 175%;
             }
         }
     }
 
     #nav-right {
-
-        span {
+        div {
             &:nth-child(-n+3) {
                 margin: 8px 16px 8px 8px;
             }
             &:nth-child(4) {
                 margin: 1px 14px;
-                font-size: 32px;
+                .material-icons {
+                    font-size: 32px;
+                }
             }
         }
     }
