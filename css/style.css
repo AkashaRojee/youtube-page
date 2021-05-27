@@ -3,6 +3,7 @@ body {
   overflow: scroll;
 }
 
+/* Flexbox classes */
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +32,7 @@ body {
           align-items: center;
 }
 
+/* Common classes */
 .hover-pointer:hover {
   cursor: pointer;
 }
