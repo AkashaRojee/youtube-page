@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  overflow: scroll;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  background-color: rgba(33, 33, 33, 0.98);
+  padding: 0px 16px;
+}
+
+nav .material-icons {
+  color: white;
+}
+
+nav #nav-left span:nth-child(1) {
+  margin: 8px;
+}
+
+nav #nav-left img {
+  margin: 18px 16px;
+  width: 90px;
+}
+
+nav #nav-mid form {
+  margin: 0px 4px;
+}
+
+nav #nav-mid form input {
+  border-width: 1px 0px 1px 1px;
+  border-color: #303030;
+  border-style: solid;
+  background-color: #121212;
+  width: 550px;
+  padding: 3px 12px;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+nav #nav-mid form button {
+  width: 65px;
+  background-color: #303030;
+  border-color: #303030;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1px 6px;
+  height: 32px;
+}
+
+nav #nav-mid form button .material-icons {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+}
+
+nav #nav-mid span:nth-child(2) {
+  margin: 8px;
+}
+
+nav #nav-right span:nth-child(-n+3) {
+  margin: 8px 16px 8px 8px;
+}
+
+nav #nav-right span:nth-child(4) {
+  margin: 1px 14px;
+  font-size: 32px;
+}
+/*# sourceMappingURL=style.css.map */
