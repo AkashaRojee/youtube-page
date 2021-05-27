@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 body {
   margin: 0px;
-  overflow: scroll;
+  overflow-y: scroll;
   font-family: 'Roboto';
+  background-color: #181818;
 }
 
 /* Flexbox classes */
@@ -57,7 +58,6 @@ body {
 [data-title]:after {
   font-family: inherit;
   content: attr(data-title);
-  background-color: #595959;
   border: none;
   border-radius: 2px;
   padding: 10px 10px;
@@ -72,7 +72,7 @@ body {
 }
 
 [data-title]:hover:after {
-  opacity: 0.7;
+  background-color: rgba(89, 89, 89, 0.7);
   visibility: visible;
 }
 
@@ -165,5 +165,67 @@ nav #nav-right div:nth-child(4) {
 
 nav #nav-right div:nth-child(4) .material-icons {
   font-size: 32px;
+}
+
+/* Video, info, description and comments */
+#left-col {
+  margin: 24px;
+}
+
+#left-col #info {
+  padding: 20px 0px 0px 0px;
+  border-bottom: 1px solid #303030;
+}
+
+#left-col #info #title {
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+#left-col #info #stats {
+  font-size: 14px;
+  line-height: 20px;
+  color: #aaa;
+}
+
+#left-col #info #stats #stats-right {
+  font-weight: 500;
+}
+
+#left-col #info #stats #stats-right #sentiment {
+  border-bottom: 2px solid transparent;
+  -o-border-image: linear-gradient(90deg, #3ea6ff 0%, #3ea6ff 98%, #606060 98%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#3ea6ff), color-stop(98%, #3ea6ff), color-stop(98%, #606060)) 1;
+     border-image: linear-gradient(90deg, #3ea6ff 0%, #3ea6ff 98%, #606060 98%) 1;
+}
+
+#left-col #info #stats #stats-right #sentiment div {
+  margin-right: 14px;
+  padding-bottom: 8px;
+}
+
+#left-col #info #stats #stats-right #sentiment div:nth-child(1) {
+  color: #3ea6ff;
+}
+
+#left-col #info #stats #stats-right div:nth-child(n+2):nth-child(-n+3) {
+  margin-right: 14px;
+}
+
+#left-col #info #stats #stats-right div:nth-child(n+2):nth-child(-n+4) {
+  padding-bottom: 8px;
+}
+
+#left-col #info #stats #stats-right div:nth-child(4):hover {
+  color: white;
+}
+
+#left-col #info #stats #stats-right div span {
+  margin: 6px;
+}
+
+#left-col #info #stats #stats-right [data-title]:after {
+  top: 130%;
 }
 /*# sourceMappingURL=style.css.map */
