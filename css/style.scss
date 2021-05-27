@@ -20,6 +20,12 @@ body {
     align-items: center;
 }
 
+.hover-pointer {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 nav {
     background-color: rgba(33, 33, 33, 0.98);
     padding: 0px 16px;
@@ -28,15 +34,19 @@ nav {
         color: white;
     }
 
-    #nav-left {
+    #nav-left {  
+
         span {
             &:nth-child(1) {
                 margin: 8px;
             }
         }
-        img {
+
+        a {
             margin: 18px 16px;
-            width: 90px;
+            img {
+                width: 90px;
+            }
         }
     }
 
@@ -46,9 +56,11 @@ nav {
             margin: 0px 4px;
 
             input {
-                border-width: 1px 0px 1px 1px;
+                border-width: 1px 1px 1px 1px;
+                border-right-color: none;
                 border-color: hsl(0, 0%, 18.82%);
                 border-style: solid;
+                border-radius: 2px 0px 0px 2px;
                 background-color: hsl(0, 0%, 7%);
                 width: 550px;
                 padding: 3px 12px;
@@ -56,6 +68,11 @@ nav {
                 font-family: Roboto;
                 line-height: 24px;
                 color: hsla(0, 100%, 100%, 0.88);
+                &:focus {
+                    outline: none;
+                    border-color:#065fd4;
+                    border-width: 1px;
+                }
             }
 
             button {
@@ -64,12 +81,19 @@ nav {
                 border-color: hsl(0, 0%, 18.82%);
                 border-width: 1px;
                 border-style: solid;
+                border-radius: 0px 2px 2px 0px;
                 padding: 1px 6px;
                 height: 32px;
                 .material-icons {
                     color: hsla(0, 100%, 100%, 0.5);
+                    opacity: 0.6;
                     font-size: 20px;
                     transform: rotate(0.03deg); //hack to prevent icon from looking pixelated at 20px
+                }
+                &:hover {
+                    .material-icons {
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -82,6 +106,7 @@ nav {
     }
 
     #nav-right {
+
         span {
             &:nth-child(-n+3) {
                 margin: 8px 16px 8px 8px;

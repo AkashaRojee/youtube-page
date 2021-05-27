@@ -31,6 +31,10 @@ body {
           align-items: center;
 }
 
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
 nav {
   background-color: rgba(33, 33, 33, 0.98);
   padding: 0px 16px;
@@ -44,8 +48,11 @@ nav #nav-left span:nth-child(1) {
   margin: 8px;
 }
 
-nav #nav-left img {
+nav #nav-left a {
   margin: 18px 16px;
+}
+
+nav #nav-left a img {
   width: 90px;
 }
 
@@ -54,9 +61,11 @@ nav #nav-mid form {
 }
 
 nav #nav-mid form input {
-  border-width: 1px 0px 1px 1px;
+  border-width: 1px 1px 1px 1px;
+  border-right-color: none;
   border-color: #303030;
   border-style: solid;
+  border-radius: 2px 0px 0px 2px;
   background-color: #121212;
   width: 550px;
   padding: 3px 12px;
@@ -66,21 +75,33 @@ nav #nav-mid form input {
   color: rgba(255, 255, 255, 0.88);
 }
 
+nav #nav-mid form input:focus {
+  outline: none;
+  border-color: #065fd4;
+  border-width: 1px;
+}
+
 nav #nav-mid form button {
   width: 65px;
   background-color: #303030;
   border-color: #303030;
   border-width: 1px;
   border-style: solid;
+  border-radius: 0px 2px 2px 0px;
   padding: 1px 6px;
   height: 32px;
 }
 
 nav #nav-mid form button .material-icons {
   color: rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
   font-size: 20px;
   -webkit-transform: rotate(0.03deg);
           transform: rotate(0.03deg);
+}
+
+nav #nav-mid form button:hover .material-icons {
+  opacity: 1;
 }
 
 nav #nav-mid span:nth-child(2) {
