@@ -321,4 +321,191 @@ nav #nav-right div:nth-child(4) .material-icons {
   color: #aaaaaa;
   font-weight: 500;
 }
+
+#left-col #comments #comments-main {
+  margin: 24px 0px;
+}
+
+#left-col #comments #comments-main #comments-count {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  margin-right: 32px;
+}
+
+#left-col #comments #comments-main #sort-options {
+  color: #aaaaaa;
+}
+
+#left-col #comments #comments-main #sort-options span:nth-child(1) {
+  margin-right: 8px;
+}
+
+#left-col #comments #comments-main #sort-options span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  vertical-align: top;
+}
+
+#left-col #comments #comments-input {
+  margin-bottom: 32px;
+}
+
+#left-col #comments #comments-input div:nth-child(1) {
+  margin-right: 16px;
+}
+
+#left-col #comments #comments-input div:nth-child(1) img {
+  border-radius: 30px;
+  width: 40px;
+}
+
+#left-col #comments #comments-input div:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#left-col #comments #comments-input div:nth-child(2) input {
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 1px solid #303030;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  font-family: inherit;
+  color: #aaaaaa;
+  padding-bottom: 4px;
+  width: 100%;
+}
+
+#left-col #comments #comments-input div:nth-child(2) input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+#left-col #comments #comments-input div:nth-child(2) input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+#left-col #comments #comments-input div:nth-child(2) input::-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+#left-col #comments #comments-input div:nth-child(2) input::placeholder {
+  color: #aaaaaa;
+}
+
+#left-col #comments #comments-input div:nth-child(2) input:focus {
+  outline: none;
+  border-bottom: 2px solid #000000;
+}
+
+#left-col #comments #comments-list .comment-item {
+  margin-bottom: 16px;
+}
+
+#left-col #comments #comments-list .comment-item:hover .comment-options div {
+  visibility: visible;
+}
+
+#left-col #comments #comments-list .comment-item .author-thumbnail {
+  margin-right: 14px;
+}
+
+#left-col #comments #comments-list .comment-item .author-thumbnail img {
+  border-radius: 30px;
+  width: 40px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-header {
+  line-height: 18px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 2px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-header .author-name {
+  margin-right: 4px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-header .author-name a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-header .comment-date {
+  color: #aaaaaa;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-body {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-stats {
+  color: #909090;
+  margin: 8px 0px;
+  font-size: 13px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-stats .material-icons {
+  font-size: 16px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-stats div {
+  margin-right: 8px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-stats div:nth-child(3) {
+  margin-left: 8px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-stats div:nth-child(4) {
+  margin-left: 16px;
+  font-weight: 500;
+  letter-spacing: 0.007px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-stats div:nth-child(1):hover, #left-col #comments #comments-list .comment-item .comment-middle .comment-stats div:nth-child(3):hover {
+  color: white;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-stats [data-title]:after {
+  top: 260%;
+}
+
+#left-col #comments #comments-list .comment-item .comment-middle .comment-replies {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  color: #3ea6ff;
+  margin-left: -7px;
+}
+
+#left-col #comments #comments-list .comment-item .comment-options div {
+  color: #909090;
+  visibility: hidden;
+}
+
+#left-col #comments #comments-list .comment-item .comment-options div:hover {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
