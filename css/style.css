@@ -228,4 +228,9 @@ nav #nav-right div:nth-child(4) .material-icons {
 #left-col #info #stats #stats-right [data-title]:after {
   top: 130%;
 }
+
+#left-col #info #stats #stats-right #sentiment[data-title="2,020 / 40"]:after {
+  top: -100%;
+  left: 20%;
+}
 /*# sourceMappingURL=style.css.map */
