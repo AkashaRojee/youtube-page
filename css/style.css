@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   margin: 0px;
   overflow-y: scroll;
   font-family: 'Roboto';
+  color: white;
   background-color: #181818;
 }
 
@@ -232,5 +233,92 @@ nav #nav-right div:nth-child(4) .material-icons {
 #left-col #info #stats #stats-right #sentiment[data-title="2,020 / 40"]:after {
   top: -100%;
   left: 20%;
+}
+
+#left-col #description {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #303030;
+}
+
+#left-col #description #channel {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+#left-col #description #channel #channel-info {
+  line-height: 16px;
+}
+
+#left-col #description #channel #channel-info [data-title]:after {
+  top: -250%;
+  font-weight: 500;
+}
+
+#left-col #description #channel #channel-info #channel-thumbnail {
+  margin-right: 16px;
+}
+
+#left-col #description #channel #channel-info #channel-thumbnail img {
+  border-radius: 30px;
+}
+
+#left-col #description #channel #channel-info #channel-name a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  color: white;
+}
+
+#left-col #description #channel #channel-info #channel-icon span {
+  font-size: 12px;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  color: #aaaaaa;
+}
+
+#left-col #description #channel #channel-info #subscriber-count {
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+
+#left-col #description #channel #channel-subscribe button {
+  padding: 10px 16px;
+  background-color: #cc0000;
+  color: white;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  border-style: solid;
+  border-color: #cc0000;
+  border-radius: 2px;
+  margin: 0px 4px;
+  border-width: 0px;
+}
+
+#left-col #description #video-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-left: 64px;
+}
+
+#left-col #description #video-description a {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
+#left-col #description #video-description #show-more {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.007px;
+  color: #aaaaaa;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
